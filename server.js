@@ -55,6 +55,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+});
+
 //create a route at /bad to similate what happens when it fails.  send back json with an errormessage property.  make sure json data shows up.
 
 app.get('/bad', (req, res) => {
